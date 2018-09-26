@@ -16,15 +16,15 @@ expander_pcf8574 ekspander1();
 ### Metody
 *W przykładach będę używał zmiennej "ekspander1"*
 
-*	void cyfrowyZapis(int pin, bool wartosc);
+*	`void cyfrowyZapis(int pin, bool wartosc);`
 
 	Metoda ustawia na podanym pinie stan wysoki (*HIGH*/*TRUE*) lub niski (*LOW*/*FALSE*).
 
-*	bool cyfrowyOdczyt(int pin);
+*	`bool cyfrowyOdczyt(int pin);`
 
 	Metoda zwraca wartość *TRUE* jeżeli na pinie podanym w parametrze jest stan wysoki lub *FALSE* jeżeli nie występuje on.
 
-*	void rawZapis(byte wartosc);
+*	`void rawZapis(byte wartosc);`
 
 	Metoda ustawia stany 8 pinów na raz. Wartosc maksymalna to 255 i oznacza wszystkie na wystkich pinach stan wysoki.
 	Każdy bit liczby oznacza jeden pin a więc:
@@ -35,6 +35,6 @@ expander_pcf8574 ekspander1();
 	
 	Czyli jeżeli chcemy aby piny P3 i P5 miały stan wysoki a pozostałe niski to musimy dodać do siebie liczby 8 i 32 czyli jako parametr powinniśmy podać 40
 
-*	byte rawOdczyt();
+*	`byte rawOdczyt();`
 	
 	Zwróci liczbę od 0 do 255. Każdy bit liczby reprezentuje stan wysoki (bit = 1) lub niski (bit = 0). Pozycja bitu to numer pinu (dokładnie to samo co zostało zaprezentowane w tabeli dla medtody *rawZapis*).
