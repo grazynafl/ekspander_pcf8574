@@ -1,17 +1,19 @@
-#Biblioteka do obsługi ekspandera opartego na PCF8574
+# Biblioteka do obsługi ekspandera opartego na PCF8574
 
 Bibliotek powstała do obsługi ekspandera opartego o układ PCF8574.
 
-###Konstruktor
+### Konstruktor
 Konstruktor wystepuje w dwóch wersjach - z parametrem typu int lub bez.
 W pierwszym opisanym przypadku należy podać jako paramtr adres I2C ekspandera (układu):
 ```C
-expander_pcf8574 ekspander1(33);```
+expander_pcf8574 ekspander1(33);
+```
 Jeżeli zostanie wywołany konstruktor bez paramteru to adres ekspandera (układu) będzie miał wartość 32 czyli piny A0, A1 i A2 powinny być podłączone do "masy":
 ```C
-expander_pcf8574 ekspander1();```
+expander_pcf8574 ekspander1();
+```
 
-###Metody
+### Metody
 *W przykładach będę używał zmiennej "ekspander1"*
 
 *	void cyfrowyZapis(int pin, bool wartosc);
