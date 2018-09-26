@@ -10,9 +10,9 @@ class expander_pcf8574 {
   public: 
     expander_pcf8574();
     expander_pcf8574(int adres);
-    void cyfrowyZapis(int pin, bool value);
+    void cyfrowyZapis(int pin, bool wartosc);
     bool cyfrowyOdczyt(int pin);
-    void rawZapis(byte value);
+    void rawZapis(byte wartosc);
     byte rawOdczyt();
 };
 
