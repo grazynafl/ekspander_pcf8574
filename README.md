@@ -30,6 +30,7 @@ expander_pcf8574 ekspander1();
 	Każdy bit liczby oznacza jeden pin a więc:
 	
 	| Piny: | P7 | P6 | P5 | P4 | P3 | P2 | P1 | P0 |
+	| ----- | -- | -- | -- | -- | -- | -- | -- | -- |
 	| Liczba reprezentująca bit dla wysokiego stanu: | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
 	
 	Czyli jeżeli chcemy aby piny P3 i P5 miały stan wysoki a pozostałe niski to musimy dodać do siebie liczby 8 i 32 czyli jako parametr powinniśmy podać 40
